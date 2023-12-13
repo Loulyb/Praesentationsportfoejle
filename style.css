@@ -274,8 +274,8 @@ p{
 /* styling af Portføjle*/
 .portføjle1 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 10px;
 }
 
@@ -291,7 +291,7 @@ p{
 
 .portføjle1 li video {
     border-radius: 8px;
-    width: 100%;
+    width: 90%;
     padding: 10px;
 }
 
