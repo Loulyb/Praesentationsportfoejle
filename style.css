@@ -17,15 +17,10 @@ body{
 }
 
 .wrapper{
-    margin: 0 auto;
+    margin: 0 auto ;
     width: 80%;
     background-color: #CCDCDC;
-}
-
-.wrapper-portføjle{
-    width: 80%;
-    background-color: #CCDCDC;
-    margin: 0 auto;
+    padding-top: 100px;
 }
 
 /* navigations bar */
@@ -116,11 +111,11 @@ section{
     display: flex;
     justify-content: center;
     margin-left: -85px;
-    margin-right: -60px;
+    margin-right: -50px;
 }
 
 .grid h2{
-    font-size: 20px;
+    font-size: 23px;
     color: #5C8A66;
 }
 
@@ -158,17 +153,61 @@ hr{
 .sm img{
     height: 30px;
     align-self: center;
+    padding-bottom: 5px;
 }
 
-.sm img:hover{
+/*facebook*/
+.fb {
+    position: relative;
+    display: inline-block;
+}
 
+.fb .fb-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -1px;
+}
+
+.fb:hover .fb-hover {
+    display: inline;
+}
+
+/*instagram*/
+.in {
+    position: relative;
+    display: inline-block;
+}
+.in .in-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 1px;
+}
+.in:hover .in-hover {
+    display: inline;
+}
+
+/*linkedin*/
+.lin {
+    position: relative;
+    display: inline-block;
+}
+.lin .lin-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.lin:hover .lin-hover {
+    display: inline;
 }
 
 /* styling af tekst */
 
 h1{
     color: #776473;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
     padding: 10px;
 }
@@ -179,15 +218,19 @@ h2{
     color: #CCDCDC;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
-    font-style: bold;
 }
 
 h3{
     color: #776473;
     font-size: 15px;
     font-family: 'Ubuntu', sans-serif;
-    font-style: bold;
     padding: 10px;
+}
+
+h4{
+    font-family:'Indie Flower', cursive;
+    font-size: 20px;
+    color: #1D1E1B;
 }
 
 .tekst{
@@ -197,13 +240,13 @@ h3{
     padding-top: 5px;
     font-size: 10px;
     font-family: 'Ubuntu', sans-serif;
-    font-style: light;
     line-height: 15px;
     color: #1D1E1B;
 }
 
 p{
     color: #2a4d4a;
+    padding: 10px;
 }
 
 /* styling af om mig*/
@@ -229,31 +272,32 @@ p{
 }
 
 /* styling af Portføjle*/
-
-#grid-container{
-    display: grid;
-    grid-template-areas: 
-     '1'
-     '2'
-     '3'
-     '4'
-     '5'
-     '6';
-    grid-template-columns: 2fr;
-    grid-template-rows: 250px;
-    height: 100%;
-    gap: 20px;
-    padding: 20px;
+.portføjle1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
 }
 
-#grid-container img{
-    border-radius: 8px;
+.portføjle1 li {
+    list-style: none;
 }
 
-.video{
+.portføjle1 li img{
+    width:100%;
     border-radius: 8px;
-    overflow: hidden;
-    position: relative;
+    padding-top: 10px;
+}
+
+.portføjle1 li video {
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+}
+
+.portføjle1 p{
+    padding-bottom: 10px;
+    font-size: 15px;
 }
 
 .adobe{
@@ -346,6 +390,10 @@ p{
         font-size: 30px;
     }
 
+    h4{
+        font-size: 20px;
+    }
+
     .tekst{
         font-size: 20px;
         padding: 10px;
@@ -368,19 +416,26 @@ p{
 
     
   /* styling af Portføjle*/
-    #grid-container{
-        grid-template-areas: 
-        '1 2'
-        '3 4'
-        '5 6';
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: 300px 400px;
-        height: 100%;
-        gap: 100px ;
-        padding: 30px;
+    .portføjle1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
     }
-    
-    #grid-container > *{
-        padding: 30px;
+
+    .portføjle1 li {
+        list-style: none;
+    }
+
+    .portføjle1 li img{
+        width: 100%;
+        border-radius: 8px;
+        padding-top: 20px;
+    }
+
+    .portføjle1 li video {
+        border-radius: 8px;
+        width: 100%;
+        padding-top: 10px;
     }
 }

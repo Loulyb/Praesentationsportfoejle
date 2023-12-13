@@ -7,10 +7,11 @@
     <title>loulyb.dk</title>
     <link rel="stylesheet" href="style.css">
 
-      <!--skrifttyperne-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--skrifttyperne-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -30,72 +31,84 @@
             </ul>
         </nav>
     </header>
-    
+
     <!--indholdet på portføjlesiden-->
-    <div class="wrapper-portføjle">
+    <div class="wrapper">
         <main class="item4">
-                <h1>Portføjle</h1>
-                <div id="grid-container">
-                    <div class="grid1">
-                        <video src="video/grønlansk_bygd.mp4" autoplay loop muted></video>
-                        <div class="content">
-                        <h4>Moving Art</h4>
-                            <p>Et stykke kunst som bevæger sig, og fortæler sin egen historie</p>
-                        </div>
-                    </div>
-                    <div class="grid2">
-                        <img src="billeder/before-after.jpg" alt="2" style="width: 100%;">
-                        <div class="content">
-                            <h4>Pentool portræt</h4>
-                            <p>Før og efter på et billede af mig selv</p>
-                        </div>
-                    </div>
-                    <div class="grid3">
-                        <div class="content">
-                            <video src="video/sovende_ansigt.mp4" autoplay loop muted></video>
-                            <h4>Animation</h4>
-                            <p>Sover ansigt eller holder den øje med</p>
-                        </div>
-                    </div>
-                    <div class="grid4">
-                        <img src="billeder/redesign-af-hjemmeside.jpg" alt="4" style="width: 100%;" class="video">
-                        <div class="content">
-                            <h4>Redesign af hjemmeside</h4>
-                            <p>Hjælp til at redesigne en hjemmeside</p>
-                        </div>
-                    </div>
-                    <div class="grid5">
-                        <img src="billeder/Billed-tobias.jpg" alt="5" style="width: 100%;">
-                        <div class="content">
-                            <h4>Portræt billeder</h4>
-                            <p>Et stykke kunst som bevæger sig, og fortæler sin egen historie</p>
-                        </div>
-                    </div>
-                    <div class="grid6">
-                        <img src="#" alt="6" style="width: 100%;">
-                        <div class="content">
-                            <h4>Moving Art</h4>
-                            <p>Et stykke kunst som bevæger sig, og fortæler sin egen historie</p>
-                        </div>
-                    </div>
-                </div>
-                <h1>Kompetencer</h1>
-                    <img src="billeder/runde-adobe.jpg" alt="adobe programmer" class="adobe" style="width: 100%;">
-            </main>
+            <h1>Portføjle</h1>
+            <ul class="portføjle1">
+                <li>
+                    <img src="billeder/before-after.jpg">
+                    <h4>Pentool Portræt</h4>
+                    <p> Før og efter på et billede af mig selv </p>
+                </li>
+                <li><img src="billeder&videoer/Portraet-web.jpg">
+                    <h4>Grafisk design</h4>
+                    <p>Dette er lavet til en julekalender, jeg har lavet med venner</p>
+                </li>
+                
+            </ul>
+            <hr>
+            <ul class="portføjle1">
+                <li>
+                    <img src="billeder/redesign-af-hjemmeside.jpg">
+                    <h4>Redesign af hjemmeside</h4>
+                    <p>Hjælp til at redesigne en hjemmeside</p>
+                </li>
+                <li>
+                    <video src="video/sovende_ansigt.mp4" autoplay loop muted></video>
+                    <h4>Animation</h4>
+                    <p>Sover ansigt eller holder den øje med en</p>
+                </li>
+                
+            </ul>
+            <hr>
+            <ul class="portføjle1">
+                <li><img src="billeder/Billed-tobias.jpg">
+                    <h4>Portræt billeder</h4>
+                    <p>Et portræt jeg har taget af min mand</p>
+                </li>
+                <li>
+                    <video src="video/grønlansk_bygd.mp4" autoplay loop muted></video>
+                    <h4>Moving art</h4>
+                    <p>Et stykke kunst som bevæger sig, og fortæller sin egen historie</p>
+                </li>
+                
+            </ul>
+            <hr>
+            <h1>Kompetencer</h1>
+            <p>Igennem uddannelse har jeg fået kompetencer og forståelse indenfor disse adobe programmer</p>
+        </main>
     </div>
-    
-    <!--indholdet i footeren-->
+<img src="billeder/runde-adobe.jpg" alt="adobe programmer" class="adobe" style="width: 100%">
+   
+<!--indholdet i footeren-->
     <footer class="footer">
         <div class="overskrift2">
             <h2>Find mig også her</h2>
         </div>
-        
+
         <div class="sm">
-            <a href="https://www.facebook.com/louise.janum/"><img src="billeder/facebook.png" alt="loulyb_logo"></a>
-            <a href="#"><img src="billeder/instragram.png" alt="loulyb_logo"></a>
-            <a href="#"><img src="billeder/linkedin.png" alt="loulyb_logo"></a>
+            <div class="fb">
+                <a href="https://www.facebook.com/louise.janum/">
+                    <img src="billeder/facebook.png" alt="loulyb_logo">
+                    <img src="billeder/facebook-hover.png" alt="hover effect" class="fb-hover">
+                </a>
+            </div>
+            <div class="in">
+                <a href="#">
+                    <img src="billeder/instragram.png" alt="loulyb_logo">
+                    <img src="billeder/instragram-hover.png" alt="hover effect" class="in-hover">
+                </a>
+            </div>
+            <div class="lin">
+                <a href="#">
+                    <img src="billeder/linkedin.png" alt="loulyb_logo">
+                    <img src="billeder/linkedin-hover.png" alt="hover effect" class="lin-hover">
+                </a>
+            </div>
         </div>
-        
+
     </footer>
 
 </body>
