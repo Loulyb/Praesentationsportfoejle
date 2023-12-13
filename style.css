@@ -8,8 +8,8 @@
 body{
     background-color: #CCDCDC;
     display: flex;
-    height: 50vh;
     flex-direction: column;
+    min-height: 100vh;
     background-image: url('billeder/baggrund.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -23,7 +23,6 @@ body{
 }
 
 .wrapper-portføjle{
-    height: 250vh;
     width: 80%;
     background-color: #CCDCDC;
     margin: 0 auto;
@@ -120,7 +119,7 @@ section{
     margin-right: -60px;
 }
 
-.grid h1{
+.grid h2{
     font-size: 20px;
     color: #5C8A66;
 }
@@ -143,10 +142,10 @@ hr{
 /* footer og stylingen af footer */
 
 .footer{
-   background-color: #2a4d4a;
-   margin-bottom: 0;
-   height: 100px;
-   overflow: hidden;
+    background-color: #2a4d4a;
+    bottom: 0;
+    width: 100%;
+    position: static;
 }
 
 .sm{
@@ -282,10 +281,6 @@ p{
         height: 300vh;
     }
 
-    .footer{
-        height: 150px;
-    }
-
     .logo{
         padding-left: 30px;
     }
@@ -305,7 +300,7 @@ p{
             min-height: 90vh;
         }
     
-        .grid h1{
+        .grid h2{
             font-size: 70px;
         }
         
