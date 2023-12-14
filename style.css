@@ -249,6 +249,12 @@ p{
     padding: 10px;
 }
 
+.tekst3{
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #1D1E1B;
+}
+
 /* styling af om mig*/
 
 .row {
@@ -276,7 +282,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 20px;
 }
 
 .portføjle1 li {
@@ -285,14 +291,13 @@ p{
 
 .portføjle1 li img{
     width:100%;
-    border-radius: 8px;
-    padding-top: 10px;
+    height: auto;
+    border-radius: 20px;
 }
 
 .portføjle1 li video {
-    border-radius: 8px;
-    width: 90%;
-    padding: 10px;
+    width: 95%;
+    border-radius: 20px;
 }
 
 .portføjle1 p{
@@ -404,6 +409,11 @@ p{
         padding-top: 10px;
     }
 
+    .tekst3{
+        font-size: 20px;
+        color: #1D1E1B;
+    }
+
     /* styling af om mig*/
         .column{
             padding: 10px 10px;
@@ -419,23 +429,29 @@ p{
     .portføjle1 {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        padding: 10px;
+        justify-content: space-between;
     }
 
     .portføjle1 li {
         list-style: none;
+        padding: 20px;
     }
 
     .portføjle1 li img{
         width: 100%;
-        border-radius: 8px;
-        padding-top: 20px;
     }
 
     .portføjle1 li video {
-        border-radius: 8px;
-        width: 100%;
-        padding-top: 10px;
+        width:95%;
+        height: auto;
+        
+    }
+    .portføjle1 p{
+        padding-bottom: 40px;
+        font-size: 20px;
+    }
+    
+    .portføjle1 h4{
+        font-size: 30px;
     }
 }
