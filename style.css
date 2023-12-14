@@ -1,11 +1,11 @@
 /* mobil versionen*/
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #CCDCDC;
     display: flex;
     flex-direction: column;
@@ -16,16 +16,27 @@ body{
     background-size: 100% 100%;
 }
 
-.wrapper{
-    margin: 0 auto ;
+/* Wrapper - giver en baggrundsfarve til teksten */
+
+.wrapper {
+    margin: 0 auto;
     width: 80%;
     background-color: #CCDCDC;
-    padding-top: 100px;
 }
 
-/* navigations bar */
+.portføjle, .grid{
+    margin-top: 100px;
+}
 
-.header{
+.wrapper-kontakt{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/* navigationsbar og logo */
+
+.header {
     width: 100%;
     height: 100px;
     display: flex;
@@ -36,35 +47,35 @@ body{
     z-index: 999;
 }
 
-.logo{
+.logo {
     width: fit-content;
     height: 100%;
     padding-left: 20px;
     display: flex;
 }
 
-.logo img{
+.logo img {
     height: 90px;
     align-self: center;
 }
 
-.menu{
+.menu {
     width: fit-content;
     height: 100%;
-    padding-right:20px;
+    padding-right: 20px;
 }
 
-.menu ul{
+.menu ul {
     list-style: none;
 }
 
-.menu ul li{
+.menu ul li {
     display: inline;
     float: left;
     margin-right: 20px;
 }
 
-.menu ul li a{
+.menu ul li a {
     display: block;
     text-decoration: none;
     padding: 0 10px;
@@ -74,22 +85,21 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.menu ul li a:hover{
+.menu ul li a:hover {
     color: #5C8A66;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-/* styling af forside */
+/* Styling af forside */
 
-section{
-    min-height: 60vh;
+section {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.grid{
+.grid {
     width: 90%;
     max-width: 1000px;
     display: flex;
@@ -97,7 +107,7 @@ section{
     justify-content: center;
 }
 
-.venstre{
+.venstre {
     width: 100%;
     height: 500px;
     background: url(billeder/mig-forside.jpg) no-repeat center / cover;
@@ -105,8 +115,8 @@ section{
     margin-left: -40px;
 }
 
-.højre{
-    width:90%;
+.højre {
+    width: 90%;
     min-height: 70px;
     display: flex;
     justify-content: center;
@@ -114,17 +124,17 @@ section{
     margin-right: -50px;
 }
 
-.grid h2{
+.grid h2 {
     font-size: 23px;
     color: #5C8A66;
 }
 
-.grid p{
-    text-align:center;
+.grid p {
+    text-align: center;
     color: #5C8A66;
 }
 
-hr{
+hr {
     border: 2px solid #2a4d4a;
     border-radius: 8px;
     margin-left: auto;
@@ -134,23 +144,45 @@ hr{
     width: 80%;
 }
 
-/* footer og stylingen af footer */
+/* Styling af om mig sektionen*/
 
-.footer{
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.column {
+    flex: 20%;
+    max-width: 100%;
+    padding: 5px 5px;
+}
+
+.column img {
+    width: 100%;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+/* Stylingen af footer */
+
+.footer {
     background-color: #2a4d4a;
     bottom: 0;
     width: 100%;
     position: static;
 }
 
-.sm{
+.sm {
     width: fit-content;
-    height: 100%; 
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.sm img{
+.sm img {
     height: 30px;
     align-self: center;
     padding-bottom: 5px;
@@ -178,12 +210,14 @@ hr{
     position: relative;
     display: inline-block;
 }
+
 .in .in-hover {
     display: none;
     position: absolute;
     top: 0;
     left: 1px;
 }
+
 .in:hover .in-hover {
     display: inline;
 }
@@ -193,26 +227,28 @@ hr{
     position: relative;
     display: inline-block;
 }
+
 .lin .lin-hover {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
 }
+
 .lin:hover .lin-hover {
     display: inline;
 }
 
-/* styling af tekst */
+/* Styling af teksten på hele hjemmesiden */
 
-h1{
+h1 {
     color: #776473;
     font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
     padding: 10px;
 }
 
-h2{
+h2 {
     text-align: center;
     padding: 10px;
     color: #CCDCDC;
@@ -220,20 +256,20 @@ h2{
     font-size: 20px;
 }
 
-h3{
+h3 {
     color: #776473;
     font-size: 15px;
     font-family: 'Ubuntu', sans-serif;
     padding: 10px;
 }
 
-h4{
-    font-family:'Indie Flower', cursive;
+h4 {
+    font-family: 'Indie Flower', cursive;
     font-size: 20px;
     color: #1D1E1B;
 }
 
-.tekst{
+.tekst {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px;
@@ -244,40 +280,20 @@ h4{
     color: #1D1E1B;
 }
 
-p{
+p {
     color: #2a4d4a;
     padding: 10px;
 }
 
-.tekst3{
+.tekst3 {
     font-size: 15px;
     font-family: 'Ubuntu', sans-serif;
     color: #1D1E1B;
 }
 
-/* styling af om mig*/
+/* Styling af Portføjle siden*/
 
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
-  }
 
-.column{
-    flex: 20%;
-    max-width: 100%;
-    padding: 5px 5px;
-}
-
-.column img{
-    width: 100%;
-    padding: 2px;
-    border-radius: 8px;
-}
-
-/* styling af Portføjle*/
 .portføjle1 {
     display: flex;
     flex-direction: column;
@@ -289,8 +305,8 @@ p{
     list-style: none;
 }
 
-.portføjle1 li img{
-    width:100%;
+.portføjle1 li img {
+    width: 100%;
     height: auto;
     border-radius: 20px;
 }
@@ -300,106 +316,183 @@ p{
     border-radius: 20px;
 }
 
-.portføjle1 p{
+.portføjle1 p {
     padding-bottom: 10px;
     font-size: 15px;
 }
 
-.adobe{
+.adobe {
     width: 100%;
 }
 
-/* styling af Kontakt */
+/* Styling af Kontakt siden */
+.kontakt-box {
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #CCDCDC;
+    padding: 10px 10px;
+    border: 8px solid #2a4d4a;
+    min-height: 70vh;
+}
+
+.kontakt-box h2 {
+    font-size: 36px;
+    color: #1D1E1B;
+}
+
+.kontakt-wrapper {
+    flex-direction: column;
+}
+
+.kontaktform {
+    text-align: left;
+}
+
+.kontaktform h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1D1E1B;
+}
+
+.formular {
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    color: #2a4d4a;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #1D1E1B;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2a4d4a;
+    color: #CCDCDC;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0, 3s ease;
+}
+
+button:hover {
+    background-color: #776473;
+}
+
+.kontaktinfo {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.kontaktinfo h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1D1E1B;
+}
+
+.kontaktinfo p {
+    margin-bottom: 10px;
+    color: #1D1E1B;
+}
 
 /* 550px or above */
 @media screen and (min-width: 550px) {
 
-    body{
+    body {
         min-height: 100vh;
     }
 
-    .wrapper{
+    .wrapper {
         width: 70%;
         margin: 0 auto;
-        height: 270vh;
     }
 
-    .wrapper-portføjle{
+    .wrapper-portføjle {
         width: 70%;
         margin: 0 auto;
-        height: 300vh;
     }
 
-    .logo{
+    .logo {
         padding-left: 30px;
     }
 
-    .menu ul li{
+    .menu ul li {
         margin-right: 30px;
     }
 
-    .menu ul li a{
+    .menu ul li a {
         padding: 0 30px;
         line-height: 100px;
         font-size: 25px;
     }
 
     /* styling af forside */
-        section{
-            min-height: 90vh;
-        }
-    
-        .grid h2{
-            font-size: 70px;
-        }
-        
-        .grid p{
-            text-align:center;
-            font-size: 40px;
-        }
+    section {
+        min-height: 90vh;
+    }
 
-        .venstre{
-            margin-left: -150px;
-            height: 700px;
-        }
-      
-        .højre{
-            width:100%;
-            min-height: 70px;
-            display: flex;
-            justify-content: center;
-            margin-left: -250px;
-            margin-right: -150px;
-        }
+    .grid h2 {
+        font-size: 70px;
+    }
+
+    .grid p {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .venstre {
+        margin-left: -150px;
+        height: 700px;
+    }
+
+    .højre {
+        width: 100%;
+        min-height: 70px;
+        display: flex;
+        justify-content: center;
+        margin-left: -250px;
+        margin-right: -150px;
+    }
 
     /* footer og stylingen af footer */
-    
-    .sm img{
+
+    .sm img {
         height: 50px;
         align-self: center;
     }
- 
+
     /* styling af tekst */
 
-    h1{
+    h1 {
         font-size: 40px;
         padding: 20px;
     }
 
-    h2{
+    h2 {
         font-size: 30px;
         padding: 20px;
     }
 
-    h3{
+    h3 {
         font-size: 30px;
     }
 
-    h4{
+    h4 {
         font-size: 20px;
     }
 
-    .tekst{
+    .tekst {
         font-size: 20px;
         padding: 10px;
         line-height: 40px;
@@ -409,23 +502,23 @@ p{
         padding-top: 10px;
     }
 
-    .tekst3{
+    .tekst3 {
         font-size: 20px;
         color: #1D1E1B;
     }
 
     /* styling af om mig*/
-        .column{
-            padding: 10px 10px;
-        }  
+    .column {
+        padding: 10px 10px;
+    }
 
-        .column img {
-            width: 100%;
-        }
+    .column img {
+        width: 100%;
+    }
 
 
-    
-  /* styling af Portføjle*/
+
+    /* styling af Portføjle*/
     .portføjle1 {
         display: flex;
         flex-direction: row;
@@ -437,21 +530,33 @@ p{
         padding: 20px;
     }
 
-    .portføjle1 li img{
+    .portføjle1 li img {
         width: 100%;
     }
 
     .portføjle1 li video {
-        width:95%;
+        width: 95%;
         height: auto;
-        
+
     }
-    .portføjle1 p{
+
+    .portføjle1 p {
         padding-bottom: 40px;
         font-size: 20px;
     }
-    
-    .portføjle1 h4{
+
+    .portføjle1 h4 {
         font-size: 30px;
+    }
+
+    /*kontakt siden*/
+
+    .kontakt-box{
+        max-width: 100%px;
+        margin-left: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 50px;
     }
 }
