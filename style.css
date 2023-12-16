@@ -24,7 +24,9 @@ body {
     background-color: #CCDCDC;
 }
 
-.portføjle, .grid1, .grid{
+.portføjle,
+.grid1,
+.grid {
     margin-top: 100px;
 }
 
@@ -363,7 +365,7 @@ section {
     color: #CCDCDC;
 }
 
-.grid1 h3{
+.grid1 h3 {
     font-size: 20px;
     color: #CCDCDC;
 }
@@ -398,7 +400,7 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0, 3s ease;
+    transition: 3s ease;
     margin-bottom: 20px;
     margin-left: 10px;
 }
@@ -472,6 +474,14 @@ button:hover {
     .sm img {
         height: 50px;
         align-self: center;
+    }
+
+    .fb .fb-hover {
+        left: -2px;
+    }
+
+    .in .in-hover {
+        left: 2px;
     }
 
     /* styling af tekst */
