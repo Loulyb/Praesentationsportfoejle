@@ -75,7 +75,7 @@ body {
     padding: 0 10px;
     line-height: 100px;
     color: #CCDCDC;
-    font-size: 20px;
+    font-size: 12px;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -338,10 +338,11 @@ section {
 .venstre1 {
     width: 100%;
     height: 800px;
-    background: url(billeder/blomster.JPG) no-repeat center / cover;
+    background: url(billeder/logo2.png) no-repeat center / cover;
     border-radius: 8px;
     margin-left: -40px;
     margin-bottom: 20px;
+    background-color: #CCDCDC;
 }
 
 .højre1 {
@@ -403,7 +404,7 @@ button {
 }
 
 button:hover {
-    background-color: #776473;
+    background-color: #5C8A66;
 }
 
 
